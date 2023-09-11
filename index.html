@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUP </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <button id="submit-btn" onclick="openPopUp()">Submit</button>
+        <div class="popUp">
+            <img src="check.png" alt="">
+            <h1>Thank You!</h1>
+            <p>Your Details Have been Submitted Successfully</p>
+            <button onclick="closePopUp()">OK</button>
+        </div>
+       
+    </main>
+    <footer>&copy Hasnain Shahzad
+    </footer>
+    <script>
+        const popUpDiv=document.querySelector(".popUp");
+        function openPopUp(){
+              popUpDiv.classList.add("open-popUp");
+              popUpDiv.classList.remove("close-popUp")
+        }
+        function closePopUp(){
+            popUpDiv.classList.remove("open-popUp");
+            popUpDiv.classList.add("close-popUp")
+             
+        }
+    </script>
+</body>
+</html>
